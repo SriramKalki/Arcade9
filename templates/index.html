@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <title>Image Classification</title>
+    <link rel='stylesheet' href='/static/styles.css'>
   </head>
   <body>
     <h1>Welcome to the Image Classification Web App!</h1>
@@ -10,5 +11,14 @@
       <input type='file' name='image' accept='image/*'>
       <button type='submit'>Classify Image</button>
     </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class='flashes'>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
   </body>
 </html>

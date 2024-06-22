@@ -1,0 +1,47 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type='file'] {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
