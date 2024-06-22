@@ -6,9 +6,19 @@
     <link rel='stylesheet' href='/static/styles.css'>
   </head>
   <body>
-    <h1>Classification Result</h1>
-    <p>Class ID: {{ class_id }}</p>
-    <img src='{{ image_url }}' alt='Uploaded Image'>
-    <a href='/'>Go back</a>
+    <header>
+      <h1>Image Classification Result</h1>
+    </header>
+    <div class="container">
+      <div class="result-container">
+        <p><strong>Class Name:</strong> {{ class_name }}</p>
+        <p><strong>Class ID:</strong> {{ class_id }}</p>
+        <img src='{{ image_url }}' alt='Uploaded Image'>
+        <a href='/'><button>Classify another image</button></a>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Image Classification App</p>
+    </footer>
   </body>
 </html>
